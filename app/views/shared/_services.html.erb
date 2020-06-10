@@ -7,11 +7,13 @@
           <h3>Consultas sobre la Cirugía</h3>
           <p>Luego de un primer encuentro con el Cirujano, el paciente realiza un chequeo general con cada área del equipo médico.</p>
         </div>
+        <div class="none services-secondary" id="show">
+          <h3>Circuito del paciente</h3>
+          <p>Pre operatorio, Cirugía y Post  operatorioTodas las dudas que tiene un paciente sobre el tratamiento y las metodologías quirúrgicas.</p>
+          <div class="p-1 pb-3">
+            <%= link_to 'Ver mas', '#', class: 'btn btn-block btn-services'  %>
+          </div>
 
-
-        <div class="none" id="show">
-          <h3>Consultas </h3>
-          <p>Luego de un primer encuentro con el Cirujano, el paciente realiza un chequeo general con cada área del equipo médico.</p>
         </div>
       </div>
     </div>
@@ -74,13 +76,13 @@
  }
 
 
-const juan = document.getElementById('plus')
-juan.addEventListener('mouseenter', (event) => {
+ const juan = document.getElementById('plus')
+ juan.addEventListener('mouseenter', (event) => {
   showElement();
 })
 
-const juancito = document.getElementById('plus')
-juancito.addEventListener('mouseleave', (event) => {
+ const juancito = document.getElementById('plus')
+ juancito.addEventListener('mouseleave', (event) => {
   showElement();
 })
 
@@ -94,6 +96,8 @@ juancito.addEventListener('mouseleave', (event) => {
   .show {
     display: block;
   }
+
+
 </style>
 
 <br><br><br><br><br><br><br>
