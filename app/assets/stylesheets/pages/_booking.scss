@@ -1,0 +1,12 @@
+.booking-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-gap: 24px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+#myVideo {
+  width: 100%;
+}
