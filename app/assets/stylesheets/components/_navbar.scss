@@ -1,6 +1,22 @@
 .topbar-container {
   background-color: #01897B;
+  a {
+    text-decoration: none;
+  }
+  i {
+    color: white;
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  p {
+    margin-bottom: 0px;
+    font-size: 13px;
+    color: white;
+    padding-top: 2px;
+  }
 }
+
+
 .navbar-lewagon {
   justify-content: space-between;
   background: #F4EFEF;

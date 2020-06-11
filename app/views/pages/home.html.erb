@@ -1,9 +1,13 @@
 <%= render 'shared/topbar' %>
 <%= render 'shared/navbar' %>
-<div class="main-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
-  <div>
-    <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
-    <p>Change your life and learn to code at one of our campuses around the world.</p>
+<div class="main-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80);">
+  <div class="main-container">
+    <h1>UNA MEJOR CALIDAD DE VIDA ES POSIBLE</h1>
+    <p>En ICONO te ayudaremos a lograrlo</p>
+    <div class="d-flex">
+      <%= link_to 'Quienes somos', '#', class: 'btn btn-lg btn-services'  %>
+      <%= link_to 'Contacto', '#', class: 'btn btn-lg btn-secondary'  %>
+    </div>
   </div>
 </div>
 <section id="services">
