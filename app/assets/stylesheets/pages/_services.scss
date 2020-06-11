@@ -40,6 +40,25 @@
   }
 }
 
+.services-third {
+   h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
+
+.services-secondary {
+   h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
 
 
 //javascript of services
@@ -54,7 +73,7 @@
 
 
 
-@media(max-width: 900px) {
+@media(max-width: 950px) {
   .services-wrapper {
     grid-template-columns: 1fr 1fr;
   }
@@ -88,15 +107,7 @@
     margin: 0 auto;
   }
 
-  .services-third {
-   h3 {
-    font-size: 18px;
-  }
 
-  p {
-    font-size: 13px;
-  }
-}
 
 }
 
