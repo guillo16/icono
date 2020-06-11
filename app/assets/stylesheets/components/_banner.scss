@@ -21,4 +21,36 @@
   }
 }
 
+.social-banner {
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ height: 80vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
 
+
+
+@media(max-width: 970px) {
+
+  .social-banner {
+    background-attachment: initial;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .social-banner {
+    height: 90vh;
+  }
+}
+
+
+
+@media (max-width: 369px) {
+  .social-banner {
+    height: 100vh;
+  }
+}

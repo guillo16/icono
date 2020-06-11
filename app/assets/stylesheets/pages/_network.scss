@@ -1,0 +1,57 @@
+.network-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.network-content {
+  width: 60%;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.scrolling-wrapper {
+  margin-top: 50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .network-card {
+    display: inline-block;
+  }
+}
+
+.network-card {
+  padding: 30px 0px;
+  img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 30px;
+
+  }
+}
+
+@media(max-width: 575px) {
+  .network-content {
+    width: 80%;
+    margin: 0 auto;
+    h2 {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+  .network-card {
+  padding: 20px 0px;
+  img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 10px;
+
+  }
+}
+}

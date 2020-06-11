@@ -14,6 +14,30 @@
   <h2 class="title"> Novedades</h2>
   <%= render 'shared/articles' %>
 </section>
+<section id="social">
+  <h2 class="title">Encontranos en nuestras redes</h2>
+  <div class="social-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+    <%= render 'shared/social' %>
+  </div>
+  <div class="social-footer">
+    <div>
+      <%= link_to '#' do  %>
+      <i class="fab fa-instagram"></i>
+      <% end %>
+      <%= link_to '#' do  %>
+      <i class="fab fa-facebook-square"></i>
+      <% end %>
+      <%= link_to '#' do  %>
+      <i class="fab fa-youtube"></i>
+      <% end %>
+    </div>
+  </div>
+</section>
 <section id="library">
-  <h2 class="title"> Nuestra Red</h2>
+  <h2 class="title"> ICONO en Red</h2>
+  <%= render 'shared/network' %>
+</section>
+<section id="bookings">
+  <h2 class="title">Solicitar Turno</h2>
+  <%= render 'shared/booking' %>
 </section>
