@@ -33,6 +33,24 @@
   }
 }
 
+.social-footer {
+  padding: 10px;
+  background-color: $green;
+  text-align: center;
+  i {
+    font-size: 30px;
+    margin-right: 20px;
+    color: white;
+    &:hover {
+      color: lightgrey;
+    }
+  }
+  a {
+    text-decoration: none;
+
+  }
+}
+
 @media(max-width: 1025px) {
   .social-card {
     padding: 50px;
