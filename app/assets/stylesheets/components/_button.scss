@@ -7,3 +7,14 @@
   }
 
 }
+
+
+.btn-team {
+   background-color: white;
+  color: $green;
+  font-weight: bold;
+  &:hover {
+    text-decoration: none;
+    color: lightgrey;
+  }
+}
