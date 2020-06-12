@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+<%= link_to 'Editar Articulo', edit_article_path(@article)  %>
+<% else %>
+<% end %>
+<div class="article-show-container">
+  <h2><%= @article.title %></h2>
+  <img src="<%= @article.photo %>" alt="">
+</div>
+

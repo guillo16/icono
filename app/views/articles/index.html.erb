@@ -1,0 +1,5 @@
+<div class="articles-container">
+  <% @articles.each do |article| %>
+  <%= render 'shared/articles', article: article %>
+  <% end %>
+</div>
