@@ -1,0 +1,140 @@
+.about-container {
+  width: 90%;
+  margin: 48px auto;
+}
+
+.about-title {
+  h2 {
+    color: $green;
+    margin-bottom: 48px;
+  }
+
+  p {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 48px;
+  }
+}
+
+
+.second-title {
+  text-align: center;
+  color: $green;
+  margin-bottom: 48px;
+}
+
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+  margin-bottom: 48px;
+}
+
+
+.about-subcontent {
+  &:hover {
+    box-shadow: 0px 0px 10px lightgrey;
+    background-color: white;
+  }
+
+  h3 {
+    color: $green;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.about-mision {
+  margin-bottom: 48px;
+}
+
+
+.about-mision-card {
+  padding: 20px;
+  box-shadow: 0 0 10px lightgrey;
+  margin-bottom: 24px;
+  border-left: 4px solid $green;
+  background-color: white;
+
+  h2 {
+    color: $green;
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 15px;
+    margin-top: 16px;
+  }
+}
+
+
+.about-footer {
+  h2 {
+    color: $green;
+    margin-bottom: 48px;
+  }
+}
+
+
+
+@media(max-width: 575px) {
+  .about-title {
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .second-title {
+    font-size: 24px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-subcontent {
+
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .about-mision-card {
+
+    h2 {
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .about-footer {
+    h2 {
+     font-size: 24px;
+   }
+ }
+}
+
+
+
+
+
+
+
+
+
