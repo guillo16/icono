@@ -1,0 +1,7 @@
+<%= render 'shared/navbar' %>
+<h2 class="article-title text-center">Novedades</h2>
+<div class="articles-index-container">
+  <% @articles.each do |article| %>
+  <%= render 'shared/cards', article: article %>
+  <% end %>
+</div>
