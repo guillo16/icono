@@ -25,9 +25,9 @@
     margin-bottom: 24px;
   }
 
-    img {
+  img {
     width: 100%;
-    height: 400px;
+    height: 600px;
     object-fit: cover;
     margin-bottom: 36px;
 
@@ -36,5 +36,44 @@
   p {
     padding-bottom:  50px;
     border-bottom: 1px solid lightgrey;
+  }
+}
+
+
+@media(max-width: 768px) {
+  .article-show-navbar {
+    width: 90%;
+    margin: 60px auto;
+  }
+  .article-show-container {
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  .article-show-content {
+    img {
+      height: 400px;
+    }
+  }
+}
+
+
+@media(max-width: 575px) {
+  .article-show-navbar {
+    width: 90%;
+    margin: 60px auto;
+  }
+  .article-show-container {
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  .article-show-content {
+    padding: 0 0px;
+     border-right: none;
+  border-left: none;
+    img {
+      height: 300px;
+    }
   }
 }
