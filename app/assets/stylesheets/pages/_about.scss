@@ -33,19 +33,20 @@
 
 
 .about-subcontent {
-    &:hover {
-      box-shadow: 0px 0px 10px lightgrey;
-    }
+  &:hover {
+    box-shadow: 0px 0px 10px lightgrey;
+    background-color: white;
+  }
 
-    h3 {
-      color: $green;
-      font-size: 24px;
-      margin-bottom: 16px;
-    }
+  h3 {
+    color: $green;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
 
-    p {
-      font-size: 16px;
-    }
+  p {
+    font-size: 16px;
+  }
 }
 
 .about-mision {
@@ -58,22 +59,76 @@
   box-shadow: 0 0 10px lightgrey;
   margin-bottom: 24px;
   border-left: 4px solid $green;
-   h2 {
-     color: $green;
-     font-size: 16px;
-   }
+  background-color: white;
 
-   p {
+  h2 {
+    color: $green;
+    font-size: 16px;
+  }
+
+  p {
     font-size: 15px;
     margin-top: 16px;
-   }
+  }
+}
+
+
+.about-footer {
+  h2 {
+    color: $green;
+    margin-bottom: 48px;
+  }
 }
 
 
 
+@media(max-width: 575px) {
+  .about-title {
+    h2 {
+      font-size: 24px;
+    }
 
+    p {
+      font-size: 14px;
+    }
+  }
 
+  .second-title {
+    font-size: 24px;
+  }
 
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-subcontent {
+
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .about-mision-card {
+
+    h2 {
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .about-footer {
+    h2 {
+     font-size: 24px;
+   }
+ }
+}
 
 
 

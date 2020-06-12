@@ -31,3 +31,21 @@
   }
 
 }
+
+
+.btn-about {
+
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  padding: 20px;
+  width: 80%;
+  text-align: left;
+  margin-bottom: 24px;
+  box-shadow: 0 0 10px lightgrey;
+  font-size: 16px;
+
+  &:focus {
+    outline: none !important;
+  }
+}
