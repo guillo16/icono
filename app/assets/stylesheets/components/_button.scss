@@ -10,13 +10,13 @@
 
 
 .btn-team {
-   background-color: white;
-  color: $green;
-  font-weight: bold;
-  &:hover {
-    text-decoration: none;
-    color: lightgrey;
-  }
+ background-color: white;
+ color: $green;
+ font-weight: bold;
+ &:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
 }
 
 
@@ -34,7 +34,6 @@
 
 
 .btn-about {
-
   background-color: white;
   border: none;
   font-weight: bold;
@@ -42,10 +41,24 @@
   width: 80%;
   text-align: left;
   margin-bottom: 24px;
-  box-shadow: 0 0 10px lightgrey;
+  box-shadow: 0 0 5px lightgrey;
   font-size: 16px;
 
   &:focus {
     outline: none !important;
+
+  }
+
+  &:hover {
+   box-shadow: 0 0 10px lightgrey;
+   background-color: #F4F4F4;
+ }
+}
+
+
+@media(max-width: 575px) {
+  .btn-about {
+    width: 100%;
+    font-size: 13px;
   }
 }
