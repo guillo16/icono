@@ -1,38 +1,6 @@
 <div class="articles-container">
-  <div class="article-cards">
-    <img src="https://res.cloudinary.com/dokddymx6/image/upload/v1591826925/SACO-2020_s4xndv.jpg" alt="">
-    <div class="article-content">
-      <div>
-        <h2>SACO 2020 SUSPENDIDO</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ut tempore praesentium harum ullam? </p>
-      </div>
-    </div>
-  </div>
-  <div class="article-cards">
-    <img src="https://res.cloudinary.com/dokddymx6/image/upload/v1591826925/SACO-2020_s4xndv.jpg" alt="">
-    <div class="article-content">
-      <div>
-        <h2>SACO 2020 SUSPENDIDO</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quo recusandae vel</p>
-      </div>
-    </div>
-  </div>
-  <div class="article-cards">
-    <img src="https://res.cloudinary.com/dokddymx6/image/upload/v1591826925/SACO-2020_s4xndv.jpg" alt="">
-    <div class="article-content">
-      <div>
-        <h2>SACO 2020 SUSPENDIDO</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, voluptas a,</p>
-      </div>
-    </div>
-  </div>
-  <div class="article-cards d-lg-none">
-    <img src="https://res.cloudinary.com/dokddymx6/image/upload/v1591826925/SACO-2020_s4xndv.jpg" alt="">
-    <div class="article-content">
-      <div>
-        <h2>SACO 2020 SUSPENDIDO</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, voluptas a,</p>
-      </div>
-    </div>
-  </div>
+  <% @articles.last(3).reverse_each do |article| %>
+  <%= render 'shared/cards', article: article %>
+  <% end %>
 </div>
+

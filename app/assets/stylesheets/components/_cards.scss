@@ -1,6 +1,6 @@
 .article-cards {
   border-radius: 8px;
-  background-color: #F4EFEF;
+  background-color: white;
 
   img {
     border-radius: 8px 8px 0px 0px;
@@ -10,6 +10,10 @@
   }
   &:hover {
     box-shadow: 0px 0px 10px lightgrey;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 
@@ -25,6 +29,9 @@
     color: black;
     font-size: 18px;
     font-weight: bold;
+  }
+  p {
+    color: black;
   }
 
 }

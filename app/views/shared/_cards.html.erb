@@ -1,8 +1,11 @@
-<%= link_to article_path(article) do %>
-<div class="article-card">
+<div class="article-cards">
+  <%= link_to article_path(article) do %>
   <img src="<%= article.photo %>" alt="">
-  <h2><%= article.title %></h2>
-  <p><%= article.subtitle.truncate(80) %></p>
-
+  <div class="article-content">
+    <div>
+      <h2><%= article.title %></h2>
+      <p><%= article.subtitle.truncate(80) %></p>
+    </div>
+  </div>
+  <% end %>
 </div>
-<% end %>
