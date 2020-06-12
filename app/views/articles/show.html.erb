@@ -1,9 +1,19 @@
+<%= render 'shared/navbar' %>
 <% if user_signed_in? %>
-<%= link_to 'Editar Articulo', edit_article_path(@article)  %>
+<div class="article-show-navbar">
+  <%= link_to 'Editar Noticia', edit_article_path(@article), class: 'btn btn-warning btn-block btn-lg'  %>
+  <%= link_to 'Destruir Noticia', @article, method: :delete, class: 'btn btn-danger btn-block btn-lg' %>
+</div>
+
 <% else %>
 <% end %>
 <div class="article-show-container">
-  <h2><%= @article.title %></h2>
-  <img src="<%= @article.photo %>" alt="">
+  <div class="article-show-content">
+    <h2><%= @article.title %></h2>
+    <h3><%= @article.subtitle %></h3>
+    <img src="<%= @article.photo %>" alt="">
+    <p><%= @article.content %></p>
+  </div>
+  <%= link_to 'Volver', :back, class: 'btn btn-services btn-block btn-lg'  %>
 </div>
 
