@@ -1,3 +1,4 @@
+//doctor container in doctor and nutrition
 .doctor-container {
   width: 90%;
   margin: 82px auto;
@@ -24,18 +25,16 @@
   }
 }
 
-
+//carousel in doctor.html.erb
 .nutrition-carousel {
   background-size: cover;
   background-position: center;
   color: white;
-  font-weight: bold;
+
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   text-align: center;
-
-
 }
 
 .nutrition-card {
@@ -47,6 +46,7 @@
     padding: 0px 20px;
     font-size: 20px;
     margin-bottom: 20px;
+    font-weight: bold;
   }
 
   p {
@@ -55,12 +55,13 @@
   }
 }
 
+// cards that are in _nutrition_card.html.erb / _doctor_card.html.erb
+
 .doctor-card {
  height: 250px;
  background-size: cover;
  background-position: center;
  color: white;
-
  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
  border-radius: 5px;
  box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -82,6 +83,7 @@ p {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 }
+//
 
 @media(max-width: 768px) {
   .doctor-content {
