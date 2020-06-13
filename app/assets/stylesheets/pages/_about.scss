@@ -35,6 +35,7 @@
 
 
 .about-subcontent {
+
   &:hover {
     box-shadow: 0px 0px 10px lightgrey;
     background-color: white;
@@ -111,9 +112,11 @@
   .about-content {
     grid-template-columns: 1fr;
     margin-bottom: 48px;
+    grid-gap: 16px;
   }
 
   .about-subcontent {
+    background-color: white;
 
     h3 {
       font-size: 20px;
