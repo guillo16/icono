@@ -25,6 +25,64 @@
 }
 
 
+.nutrition-carousel {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+
+
+}
+
+.nutrition-card {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h5 {
+    padding: 0px 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    padding: 0px 20px;
+  }
+}
+
+.doctor-card {
+ height: 250px;
+ background-size: cover;
+ background-position: center;
+ color: white;
+
+ text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+ border-radius: 5px;
+ box-shadow: 0 0 15px rgba(0,0,0,0.2);
+ text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 16px;
+ h4 {
+  padding: 0px 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+   font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  padding: 0px 10px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+}
+
 @media(max-width: 768px) {
   .doctor-content {
     grid-template-columns:1fr;
