@@ -1,18 +1,20 @@
 .about-container {
   width: 90%;
-  margin: 48px auto;
+  margin: 72px auto;
 }
 
 .about-title {
   h2 {
     color: $green;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
   }
 
   p {
-    text-align: left;
-    font-weight: bold;
-    margin-bottom: 48px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 72px;
+    line-height: 1.8;
   }
 }
 
@@ -20,7 +22,7 @@
 .second-title {
   text-align: center;
   color: $green;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 
@@ -28,7 +30,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 8px;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 
@@ -46,11 +48,12 @@
 
   p {
     font-size: 16px;
+    line-height: 1.8;
   }
 }
 
 .about-mision {
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 
@@ -69,6 +72,7 @@
   p {
     font-size: 15px;
     margin-top: 16px;
+    line-height: 1.6;
   }
 }
 
@@ -76,29 +80,37 @@
 .about-footer {
   h2 {
     color: $green;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
   }
 }
 
 
 
 @media(max-width: 575px) {
+  .about-container {
+    margin: 48px auto;
+  }
   .about-title {
     h2 {
       font-size: 24px;
+      margin-bottom: 48px;
     }
 
     p {
+      width: 100%;
       font-size: 14px;
+      margin-bottom: 48px;
     }
   }
 
   .second-title {
     font-size: 24px;
+    margin-bottom: 48px;
   }
 
   .about-content {
     grid-template-columns: 1fr;
+    margin-bottom: 48px;
   }
 
   .about-subcontent {
@@ -110,6 +122,10 @@
     p {
       font-size: 14px;
     }
+  }
+
+  .about-mision {
+    margin-bottom: 48px;
   }
 
   .about-mision-card {
@@ -126,6 +142,7 @@
   .about-footer {
     h2 {
      font-size: 24px;
+     margin-bottom: 48px;
    }
  }
 }
