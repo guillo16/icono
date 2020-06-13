@@ -74,7 +74,7 @@
   padding: 0px 10px;
   font-size: 20px;
   margin-bottom: 10px;
-   font-weight: bold;
+  font-weight: bold;
 }
 
 p {
@@ -90,11 +90,30 @@ p {
     grid-template-columns:1fr;
     grid-gap: 16px;
   }
-
-
   img {
-   height: 300px;
- }
+    height: 300px;
+  }
+
+
+}
+
+@media(max-width: 575px) {
+  .doctor-container {
+    margin: 48px auto;
+    h2 {
+      margin-bottom: 48px;
+      color: $green;
+      font-size: 24px;
+    }
+  }
+  .doctor-content {
+    p {
+      line-height: 1.6;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+  }
 }
 
 
