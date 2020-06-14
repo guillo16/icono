@@ -20,7 +20,7 @@ Cirugía Metabólica </p>
 
 
 
-      <div class="none " id="content-1">
+      <div class="none surgery-box-content " id="content-1">
         <ul>
           <li>Prevención y o  tratamiento de factores de riesgo asociados a la obesidad.
           </li>
@@ -41,8 +41,9 @@ Cirugía Metabólica </p>
         <h2 id="button-2">+</h2>
       </div>
 
-      <div class="none" id="content-2">
-        Las cirugías favorecen el descenso de peso por varios mecanismos, ya sea por técnica restrictiva (estomago  más chico), malabsortiva (instestino mas corto),  o mixtas (combinación de restricción y mala absorción).  A su vez, los cambios anatómicos generan disminución y aumento de algunas hormonas relacionadas al apetito (ej. Grelina, leptina ,incretinas).
+      <div class="none surgery-box-content" id="content-2">
+        <p>  Las cirugías favorecen el descenso de peso por varios mecanismos, ya sea por técnica restrictiva (estomago  más chico), malabsortiva (instestino mas corto),  o mixtas (combinación de restricción y mala absorción).  A su vez, los cambios anatómicos generan disminución y aumento de algunas hormonas relacionadas al apetito (ej. Grelina, leptina ,incretinas).</p>
+
       </div>
     </div>
     <div>
@@ -51,7 +52,7 @@ Cirugía Metabólica </p>
         <h2 id="button-3">+</h2>
       </div>
 
-      <div class="none " id="content-3">
+      <div class="none surgery-box-content" id="content-3">
         <ul>
           <li> Edad entre 18 y 65 años.</li>
           <li>Fracasos de tratamientos médicos previos.</li>
@@ -67,9 +68,9 @@ Cirugía Metabólica </p>
     <div>
       <div class="surgery-box d-flex justify-content-between" onclick="buttonFour()">
         <h2>Circuito del paciente en ICONO</h2>
-        <h2>+</h2>
+        <h2 id="button-4">+</h2>
       </div>
-      <div class="none" id="content-4">
+      <div class="none surgery-box-content" id="content-4">
         <p>
         Generalmente el  Médico Cirujano será el encargado de derivar a  todas las especialidades relacionadas al tratamiento del problema de salud y peso con el que se encuentre. Se realizará la solicitud de  estudios pre quirúrgicos:</p><br>
         <ul>
@@ -128,6 +129,25 @@ console.log(showElement);
 showElement.classList.toggle('show');
 }
 
+const buttonFour = () => {
+
+ const plus = document.getElementById('button-4');
+ if (plus.innerText === '+') {
+   plus.innerText = '-'
+ } else {
+  plus.innerText = '+'
+};
+const showElement = document.getElementById('content-4');
+console.log(showElement);
+showElement.classList.toggle('show');
+}
+
 
 </script>
 
+<style>
+  .surgery-box {
+     cursor: pointer;
+  }
+
+</style>
