@@ -5,30 +5,37 @@
   h2 {
     font-size: 32px;
     color: $green;
+    margin-right: 16px;
+  }
+
+  p {
+    font-size: 24px;
+    margin-bottom: 0px;
+    color: $green;
   }
 }
 
 .surgery-navbar {
- width: 90%;
- margin: 0 auto;
- h2 {
-  font-size: 24px;
-  color: $green;
-  font-size: bold;
-}
+  width: 90%;
+  margin: 0 auto;
+  h2 {
+    font-size: 24px;
+    color: $green;
+    font-size: bold;
+  }
 
-p {
-  width: 70%;
-  margin-top: 16px;
-  line-height: 1.8;
-  margin-bottom: 16px;
-  font-size: 15px;
+  p {
+    width: 80%;
+    margin-top: 16px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    font-size: 15px;
 
-}
+  }
 }
 
 .surgery-subcontent {
-  width: 70%;
+  width: 80%;
 }
 
 
@@ -91,11 +98,51 @@ p {
 }
 
 
+@media(max-width: 768px) {
+  .surgery-navbar {
+    width: 90%;
+    margin: 0 auto;
+    h2 {
+      font-size: 24px;
+      color: $green;
+      font-size: bold;
+    }
 
+    p {
+      width: 100%;
+      margin-top: 16px;
+      line-height: 1.8;
+      margin-bottom: 16px;
+      font-size: 15px;
+
+    }
+  }
+
+  .surgery-subcontent {
+    width: 100%;
+  }
+}
 
 
 
 @media(max-width: 575px) {
+
+  .surgery-header {
+    width: 90%;
+    margin: 48px auto;
+
+    h2 {
+      font-size: 24px;
+      color: $green;
+      margin-right: 16px;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 0px;
+      color: $green;
+    }
+  }
   .team-surgery-card {
     height: 400px;
     font-size: 22px;
@@ -125,12 +172,21 @@ p {
   }
 
   .surgery-box {
-    padding-bottom: 8px;
     border-bottom: 1px solid lightgrey;
-    padding-top: 8px;
     h2 {
-      font-size:17px;
+      font-size:16px;
       color: $green;
+    }
+  }
+
+  .surgery-box-content {
+
+    li {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 14px;
     }
   }
 
