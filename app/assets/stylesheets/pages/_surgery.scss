@@ -33,15 +33,22 @@ p {
 
 
 .surgery-box {
-  padding-bottom: 8px;
-  border-bottom: 1px solid lightgrey;
-  padding-top: 8px;
-  h2 {
-    font-size:17px;
-    color: $green;
-  }
+ cursor: pointer;
+ padding-bottom: 16px;
+ border-bottom: 1px solid lightgrey;
+ padding-top: 16px;
+ h2 {
+  font-size:17px;
+  color: $green;
+  margin-bottom: 0px;
+}
 }
 
+
+.surgery-box-content {
+ padding: 20px 0px;
+ border-bottom: 1px solid lightgrey;
+}
 
 
 
@@ -118,13 +125,13 @@ p {
   }
 
   .surgery-box {
-  padding-bottom: 8px;
-  border-bottom: 1px solid lightgrey;
-  padding-top: 8px;
-  h2 {
-    font-size:17px;
-    color: $green;
+    padding-bottom: 8px;
+    border-bottom: 1px solid lightgrey;
+    padding-top: 8px;
+    h2 {
+      font-size:17px;
+      color: $green;
+    }
   }
-}
 
 }
