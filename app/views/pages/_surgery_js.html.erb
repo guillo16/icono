@@ -13,14 +13,14 @@ Cirugía Metabólica </p>
 
   <div class="surgery-subcontent">
     <div>
-      <div class="surgery-box d-flex justify-content-between">
+      <div class="surgery-box d-flex justify-content-between" onclick="buttonOne()">
         <h2>Preoperatorio: Objetivos de la cirugía</h2>
-        <h2>+</h2>
+        <h2 id="button-1">+</h2>
       </div>
 
 
 
-      <div class="d-none">
+      <div class="none " id="content-1">
         <ul>
           <li>Prevención y o  tratamiento de factores de riesgo asociados a la obesidad.
           </li>
@@ -36,22 +36,22 @@ Cirugía Metabólica </p>
 
 
     <div>
-      <div class="surgery-box d-flex justify-content-between">
+      <div class="surgery-box d-flex justify-content-between" onclick="buttonTwo()">
         <h2>Cirugías</h2>
-        <h2>+</h2>
+        <h2 id="button-2">+</h2>
       </div>
 
-      <div class="d-none">
+      <div class="none" id="content-2">
         Las cirugías favorecen el descenso de peso por varios mecanismos, ya sea por técnica restrictiva (estomago  más chico), malabsortiva (instestino mas corto),  o mixtas (combinación de restricción y mala absorción).  A su vez, los cambios anatómicos generan disminución y aumento de algunas hormonas relacionadas al apetito (ej. Grelina, leptina ,incretinas).
       </div>
     </div>
     <div>
-      <div class="surgery-box d-flex justify-content-between">
+      <div class="surgery-box d-flex justify-content-between" onclick="buttonThree()">
         <h2>Requisitos básicos</h2>
-        <h2>+</h2>
+        <h2 id="button-3">+</h2>
       </div>
 
-      <div class="d-none">
+      <div class="none " id="content-3">
         <ul>
           <li> Edad entre 18 y 65 años.</li>
           <li>Fracasos de tratamientos médicos previos.</li>
@@ -65,11 +65,11 @@ Cirugía Metabólica </p>
 
     </div>
     <div>
-      <div class="surgery-box d-flex justify-content-between">
+      <div class="surgery-box d-flex justify-content-between" onclick="buttonFour()">
         <h2>Circuito del paciente en ICONO</h2>
         <h2>+</h2>
       </div>
-      <div class="d-none">
+      <div class="none" id="content-4">
         <p>
         Generalmente el  Médico Cirujano será el encargado de derivar a  todas las especialidades relacionadas al tratamiento del problema de salud y peso con el que se encuentre. Se realizará la solicitud de  estudios pre quirúrgicos:</p><br>
         <ul>
@@ -87,4 +87,47 @@ Cirugía Metabólica </p>
 
 </div>
 
+
+<script>
+
+
+  const buttonOne = () => {
+    const plus = document.getElementById('button-1');
+    if (plus.innerText === '+') {
+     plus.innerText = '-'
+   } else {
+    plus.innerText = '+'
+  };
+
+  const showElement = document.getElementById('content-1');
+  showElement.classList.toggle('show');
+}
+
+const buttonTwo = () => {
+
+ const plus = document.getElementById('button-2');
+ if (plus.innerText === '+') {
+   plus.innerText = '-'
+ } else {
+  plus.innerText = '+'
+};
+const showElement = document.getElementById('content-2');
+showElement.classList.toggle('show');
+}
+
+const buttonThree = () => {
+
+ const plus = document.getElementById('button-3');
+ if (plus.innerText === '+') {
+   plus.innerText = '-'
+ } else {
+  plus.innerText = '+'
+};
+const showElement = document.getElementById('content-3');
+console.log(showElement);
+showElement.classList.toggle('show');
+}
+
+
+</script>
 
