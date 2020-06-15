@@ -1,7 +1,7 @@
 .main-banner {
   background-size: cover;
-  background-position: center;
-  height: calc(100vh - 120px);
+  background-position: 80% 10%;
+  height: calc(100vh - 145px);
   display: flex;
   align-items: center;
 }
@@ -40,6 +40,10 @@
 }
 
 @media (max-width: 576px) {
+  .main-banner {
+    background-position: 60% 10%;
+  }
+
   .social-banner {
     height: 90vh;
   }

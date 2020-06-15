@@ -6,15 +6,12 @@
         <div class="service-1">
           <h3>Consultas sobre la Cirugía</h3>
           <p>Luego de un primer encuentro con el Cirujano, el paciente realiza un chequeo general con cada área del equipo médico.</p>
-          <div class="service-button" onclick="showElement()">
-              Ver Más
-          </div>
         </div>
-        <div class="none new-services" id="show">
+        <div class="new-services" id="show">
           <h3>Circuito del paciente</h3>
           <p>Pre operatorio, Cirugía y Post  operatorioTodas las dudas que tiene un paciente sobre el tratamiento y las metodologías quirúrgicas.</p>
           <div class="pt-3">
-            <%= link_to 'Ver mas', team_path, class: 'btn btn-block btn-services'  %>
+            <%= link_to 'Ver más', team_path, class: 'btn btn-block btn-white'  %>
           </div>
         </div>
       </div>
@@ -24,18 +21,15 @@
     <div class="services-image">
       <img src="https://res.cloudinary.com/dokddymx6/image/upload/v1591816612/plan-dieta-menu-o-programa-cinta-metrica-agua-pesas-comida-dietetica-frutas-frescas-blanco_1429-5171_qo1x1l.jpg" alt="">
       <div class="services-content" id="plus-1">
-        <div class="service-2">
+        <div class="service-1">
           <h3>Nutrición</h3>
           <p>En la primera consulta se recolectan los datos antropométricos específicos necesarios para evaluar y determinar el estado nutricional y grado de obecidad o sobrepeso</p>
-          <div class="service-button" onclick="showElementSecond()">
-              Ver Más
-          </div>
         </div>
-        <div class="none new-services" id="show-2">
+        <div class="new-services" id="show-2">
           <h3>Nutrición + Acondicionamiento Físico</h3>
           <p>Encontrá recetas y rutinas de entrenamiento para lograr y mantener un estilo de vida saludable.</p>
           <div class="p-1 pb-3">
-            <%= link_to 'Ver mas', team_path, class: 'btn btn-block btn-services'  %>
+            <%= link_to 'Ver más', team_path, class: 'btn btn-block btn-white'  %>
           </div>
         </div>
       </div>
@@ -45,61 +39,21 @@
     <div class="services-image">
       <img src="https://res.cloudinary.com/dokddymx6/image/upload/v1591816638/vista-superior-psicologa-escribiendo-diagnostico_1098-2621_pyn4ot.jpg" alt="">
       <div class="services-content" id="plus-2">
-        <div class="service-3">
+        <div class="service-1">
           <h3>Psicología</h3>
           <p>El Área de Psicología ofrece diferentes grupos de terapia que ayudan a mitigar dudas, obtener apoyo y reconocer el problema de la obesidad.</p>
-          <div class="service-button" onclick="showElementThird()">
-              Ver Más
-          </div>
         </div>
-        <div class="none new-services" id="show-3">
+        <div class="new-services" id="show-3">
           <h3>Terapias grupales e invidivuales</h3>
           <p>Un espacio creado a aclarar dudas, buscar y dar apoyo reconociendo a través de distintos testimonios, la obesidad como una enfermedad que se puede controlar.</p>
           <div class="p-1 pb-3">
-            <%= link_to 'Ver mas', team_path, class: 'btn btn-block btn-services'  %>
+            <%= link_to 'Ver más', team_path, class: 'btn btn-block btn-white'  %>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<script>
-  const showElement = () => {
-
-   const button = document.querySelector('#show');
-   button.classList.toggle("show");
-
-   const buttonNone = document.querySelector('.service-1');
-   buttonNone.classList.toggle("none")
- };
-
-
- const showElementSecond = () => {
-
-   const button = document.querySelector('#show-2');
-   button.classList.toggle("show");
-
-   const buttonNone = document.querySelector('.service-2');
-   buttonNone.classList.toggle("none")
- };
-
-
- const showElementThird = () => {
-
-   const button = document.querySelector('#show-3');
-   button.classList.toggle("show");
-
-   const buttonNone = document.querySelector('.service-3');
-   buttonNone.classList.toggle("none")
- };
-
-
-
-
-</script>
-
-
 
 <!--
 <div class="services-wrapper">

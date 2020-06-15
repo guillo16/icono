@@ -42,40 +42,47 @@
     margin-bottom: 16px;
     font-size: 14px;
   }
-  .service-button {
-    color: #F9F7F7;
-    border-color: #F9F7F7;
-    background-color: #F9F7F7;
-    width: 40%;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 8px;
-
-  }
 
   &:hover {
-    .service-button {
-      cursor: pointer;
-      color: white;
-      border-color: $green;
-      background-color: $green;
+    background-color: $green;
+
+    .new-services {
+      display: block;
+    }
+
+    .service-1 {
+      display: none;
     }
 
   }
 }
 
 .new-services {
- h3 {
-  font-size: 18px;
+  display: none;
+
+  h3 {
+    font-size: 18px;
+    color: white;
+  }
+
+  p {
+    font-size: 13px;
+    color: white;
+
+  }
 }
 
-p {
-  font-size: 13px;
+
+.btn-white {
+  background-color: white;
+  color: $green;
+  font-weight: bold;
 }
-}
 
 
 
+
+//javascript of services and team
 .team-home-container {
   width: 90%;
   margin: 0 auto;
@@ -85,8 +92,6 @@ p {
   padding: 16px;
   background-color: $green;
 }
-
-//javascript of services
 
 .none {
   display: none;
@@ -132,10 +137,33 @@ p {
     margin: 0 auto;
   }
 
+  .new-services {
 
+    p {
+      margin-top: 5px;
+      font-size: 13px;
+      color: white;
+      margin-bottom: 5px;
+
+    }
+  }
 
 }
 
+@media(max-width: 330px) {
+  .services-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .new-services {
+    p {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+  }
+
+}
 
 
 

@@ -2,7 +2,7 @@
  width: 90%;
  margin: 0px auto;
  display: grid;
- grid-template-columns: 2fr 1fr;
+ grid-template-columns: 60% 40%;
  grid-gap: 16px;
  margin-bottom: 82px;
 }
@@ -29,6 +29,8 @@
   }
 }
 
+
+
 .form-control {
   background-color: white;
   border-color: white;
@@ -36,6 +38,15 @@
   box-shadow: 0px 0px 4px lightgrey;
 }
 
+.map {
+  h2 {
+    background-color: $green;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding: 10px 4px;
+  }
+}
 
 @media(max-width: 787px) {
   .form-wrapper {
