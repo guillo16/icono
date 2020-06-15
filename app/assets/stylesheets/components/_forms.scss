@@ -4,6 +4,7 @@
  display: grid;
  grid-template-columns: 2fr 1fr;
  grid-gap: 16px;
+ margin-bottom: 82px;
 }
 
 .forms {
@@ -38,10 +39,8 @@
 
 @media(max-width: 787px) {
   .form-wrapper {
-   width: 90%;
-   margin: 0px auto;
-   display: grid;
    grid-template-columns:1fr;
-   grid-gap: 16px;
+   grid-gap: 24px;
+   margin-bottom: 40px;
  }
 }
