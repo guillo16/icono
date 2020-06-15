@@ -24,41 +24,56 @@
   right: 14px;
   text-align: center;
   height: 100%;
-  padding: 40px 20px;
+  padding: 16px 20px;
   box-shadow: 0px 0px 10px lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   h3 {
     font-weight: bold;
     color: #01897B;
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-top: 8px;
   }
 
   p {
+    margin-top: 16px;
     color: black;
-    margin-bottom: 2px;
+    margin-bottom: 16px;
     font-size: 14px;
   }
+  .service-button {
+    color: #F9F7F7;
+    border-color: #F9F7F7;
+    background-color: #F9F7F7;
+    width: 40%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+
+  }
+
+  &:hover {
+    .service-button {
+      cursor: pointer;
+      color: white;
+      border-color: $green;
+      background-color: $green;
+    }
+
+  }
 }
 
-.services-third {
-   h3 {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 13px;
-  }
+.new-services {
+ h3 {
+  font-size: 18px;
 }
 
-.services-secondary {
-   h3 {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 13px;
-  }
+p {
+  font-size: 13px;
 }
+}
+
 
 
 .team-home-container {
