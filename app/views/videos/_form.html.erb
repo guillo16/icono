@@ -1,0 +1,14 @@
+ <div class="form-container">
+  <div class="forms">
+    <h2>Crear Video</h2>
+    <%= simple_form_for @video do |f| %>
+    <p>Titulo</p>
+    <%= f.input :title, label: false %>
+    <p>Link</p>
+    <%= f.input :url, label: false %>
+    <p>Categoria</p>
+    <%= f.input :category, collection: ['hola', 'chau'], label: false %> <br>
+    <%= f.submit 'Crear Video', class: 'btn btn-block btn-services'%>
+    <% end %>
+  </div>
+</div>

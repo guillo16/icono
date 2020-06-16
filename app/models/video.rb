@@ -1,5 +1,5 @@
 class Video < ApplicationRecord
-  validates :title, precense: true
-  validates :url, precense: true
-  validates :category, precense: true
+  validates :title, presence: true
+  validates :url, presence: true
+  validates :category, presence: true
 end

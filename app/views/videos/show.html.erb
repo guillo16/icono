@@ -1,2 +1,12 @@
-<h1>Videos#show</h1>
-<p>Find me in app/views/videos/show.html.erb</p>
+<div class="video-container">
+  <div class="video-wrapper">
+    <div class="video-player">
+      <iframe width= "840" height= "540" src="https://www.youtube.com/embed/<%= @video.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h5><%= @video.title %></h5>
+      <h5><%= @video.category %></h5>
+    </div>
+  </div>
+  <div class="video-button">
+    <%= link_to 'Back to Videos' ,videos_path, class: 'btn btn-primary' %>
+  </div>
+</div>
