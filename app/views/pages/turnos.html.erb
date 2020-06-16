@@ -1,0 +1,61 @@
+<%= render 'shared/navbar' %>
+<div class="turnos-banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://res.cloudinary.com/dokddymx6/image/upload/c_scale,w_1259/v1591900516/Captura_de_Pantalla_2020-06-11_a_la_s_15.34.29_iau8hb.jpg);">
+</div>
+<h2 class="title">Solicitar turno</h2>
+<div class="booking-container">
+  <div>
+    <img src="https://res.cloudinary.com/dokddymx6/image/upload/c_scale,w_974/v1592312831/curso_secretaria_ejecutiva_z7vjco.jpg" alt="">
+  </div>
+  <div>
+    <%= link_to 'Turno Online', '#', class: 'btn btn-lg btn-block btn-services'  %><br>
+    <button type="button" class="btn btn-lg btn-block btn-services" data-toggle="modal" data-target="#exampleModalCenter">
+      Llamar
+    </button><br>
+    <button type="button" class="btn btn-lg btn-block btn-services" data-toggle="modal" data-target="#exampleModal">
+      Horarios
+    </button>
+  </div>
+</div>
+<!-- Modal 1-->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Teléfonos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 18px; font-weight: bold;">
+          <a href="tel:+5493814920436">381-4920436</a>
+        </p>
+        <p style="font-size: 18px; font-weight: bold;">
+          <a href="tel:+5493814303750">381-4303750</a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 2-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Horarios</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 18px; font-weight: bold;">Lunes a Viernes <br> 9 a 13 horas y 16 a 21 hs </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>

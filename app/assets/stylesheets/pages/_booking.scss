@@ -6,8 +6,16 @@
   grid-gap: 24px;
   align-items: center;
   margin-bottom: 50px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 #myVideo {
   width: 100%;
 }
+
+//turnos part
+
 
