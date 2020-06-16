@@ -2,14 +2,12 @@
  width: 90%;
  margin: 0px auto;
  display: grid;
- grid-template-columns: 60% 40%;
- grid-gap: 16px;
+ grid-template-columns: 1fr 1fr;
+ grid-gap: 24px;
  margin-bottom: 82px;
 }
 
 .forms {
-  width: 90%;
-  margin: 0px auto;
   padding: 40px;
   border-radius: 8px;
   background-color: white;
@@ -39,12 +37,28 @@
 }
 
 .map {
-  h2 {
-    background-color: $green;
-    color: white;
+  p {
+    color: black;
+    font-size: 15px;
+    margin-bottom: 8px;
+
+  }
+  i {
     font-size: 18px;
-    margin-bottom: 0px;
-    padding: 10px 4px;
+
+  }
+}
+
+.contact-footer {
+  margin-top: 16px;
+  margin-bottom: 206px;
+  a {
+    color: $green;
+    text-decoration: none;
+  }
+  i {
+    font-size: 32px;
+    margin-right: 16px;
   }
 }
 
@@ -54,4 +68,18 @@
    grid-gap: 24px;
    margin-bottom: 40px;
  }
+
+ .contact-footer {
+  text-align: center;
+  margin-bottom: 40px;
+}
+}
+
+@media(max-width: 575px) {
+  .forms {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+
+  }
 }
