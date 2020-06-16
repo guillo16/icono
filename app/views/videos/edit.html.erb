@@ -1,2 +1,8 @@
 <%= render 'shared/navbar' %>
-<%= render 'form' %>
+<div class="create-container">
+  <h2 class="new-title">Editar Video</h2>
+  <%= render 'form' %>
+  <div class="p-5">
+    <%= link_to 'Volver', :back, class: ' btn btn-danger btn-block'  %>
+  </div>
+</div>

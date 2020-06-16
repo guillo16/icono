@@ -1,4 +1,10 @@
 <%= render 'shared/navbar' %>
+<% if user_signed_in? %>
+<div class="article-show-navbar">
+  <%= link_to 'Crear Noticia', new_article_path, class: 'btn btn-primary btn-block btn-lg'  %>
+</div>
+<% else %>
+<% end %>
 <h2 class="article-title text-center">Novedades</h2>
 <div class="articles-index-container">
   <% @articles.each do |article| %>
