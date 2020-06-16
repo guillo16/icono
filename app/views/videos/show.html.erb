@@ -1,4 +1,11 @@
 <%= render 'shared/navbar' %>
+<% if user_signed_in? %>
+<div class="article-show-navbar">
+  <%= link_to 'Editar Video', edit_video_path(@video), class: 'btn btn-warning btn-block btn-lg'  %>
+  <%= link_to 'Destruir Video', @video, method: :delete, data: { confirm: 'Estas seguro de eliminar el video' }, class: 'btn btn-danger btn-block btn-lg' %>
+</div>
+<% else %>
+<% end %>
 <div class="video-player">
   <iframe src="https://www.youtube.com/embed/<%= @video.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div class="d-flex justify-content-between video-footer">

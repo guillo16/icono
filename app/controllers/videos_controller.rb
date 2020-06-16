@@ -3,7 +3,13 @@ class VideosController < ApplicationController
   before_action :set_video, only: [:show, :edit, :update, :destroy]
 
   def index
-    @videos = Video.all
+    if params['category']
+      @videos = Video.where(category: params['category'])
+    elsif params["created_at"]
+      @videos = Video.order(created_at: :desc)
+    else
+      @videos = Video.all
+    end
   end
 
   def show

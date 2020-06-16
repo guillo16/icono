@@ -2,9 +2,9 @@
   <%= link_to video_path(video) do %>
   <img src="https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg" alt="Card image cap">
   <div class="video-card-body">
-    <h5><%= video.title %></h5>
-    <p><%= video.category %> </p>
-    <p> <%= video.created_at.strftime("%d de %B de %Y") %></p>
+    <h2><%= video.title %></h2>
+    <h3><%= video.category %></h3>
+    <p><%= video.created_at.strftime("%d/%m/%Y") %></p>
   </div>
   <%end %>
 </div>
