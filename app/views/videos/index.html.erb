@@ -1,2 +1,12 @@
-<h1>Videos#index</h1>
-<p>Find me in app/views/videos/index.html.erb</p>
+<%= render 'shared/navbar' %>
+<div class="videos-wrapper">
+  <div class="side-bar">
+   <h2>Categorias</h2>
+   <h2>Creados recientemento</h2>
+  </div>
+  <div class="videos-container">
+    <% @videos.each do |video| %>
+    <%= render 'shared/video_cards', video: video %>
+    <% end %>
+  </div>
+</div>
