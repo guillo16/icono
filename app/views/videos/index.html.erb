@@ -1,0 +1,18 @@
+<%= render 'shared/navbar' %>
+<h2 class="title">Videos</h2>
+<div class="videos-wrapper">
+  <div class="side-bar">
+   <h2>Categorias</h2>
+   <p><%= link_to 'Cirujía Metabólica', videos_path(category: "Cirujía Metabólica")  %></p>
+    <p><%= link_to 'Manga Gástrica', videos_path(category: "Manga Gástrica")  %></p>
+     <p><%= link_to 'Bypass Gástrico', videos_path(category: "Bypass Gástrico") %></p>
+   <h2>Filtros</h2>
+   <p><%= link_to 'Mas recientes',videos_path(created_at: :desc) %></p>
+    <p><%= link_to 'Todos',videos_path %></p>
+  </div>
+  <div class="videos-container">
+    <% @videos.each do |video| %>
+    <%= render 'shared/video_cards', video: video %>
+    <% end %>
+  </div>
+</div>
