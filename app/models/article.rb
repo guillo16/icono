@@ -1,3 +1,3 @@
 class Article < ApplicationRecord
-  paginates_per 2
+  paginates_per 6
 end
