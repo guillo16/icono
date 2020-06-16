@@ -14,16 +14,19 @@
   <h2 class="title"> Nuestros Sevicios</h2>
   <%= render 'shared/services' %>
   <div class="team-home-container">
-     <img src="https://res.cloudinary.com/dokddymx6/image/upload/v1591900516/Captura_de_Pantalla_2020-06-11_a_la_s_15.34.29_iau8hb.jpg" alt="" style="width: 100%;
-  height: 400px; object-fit: cover;">
-  <div class="team-footer text-center">
+   <img src="https://res.cloudinary.com/dokddymx6/image/upload/v1591900516/Captura_de_Pantalla_2020-06-11_a_la_s_15.34.29_iau8hb.jpg" alt="" style="width: 100%;
+   height: 400px; object-fit: cover;">
+   <div class="team-footer text-center">
     <%= link_to 'Nuestro equipo', team_path, class: 'btn btn-team btn-large'  %>
   </div>
-  </div>
+</div>
 </section>
 <section id="articles">
   <h2 class="title"> Novedades</h2>
   <%= render 'shared/articles' %>
+  <div class="text-center pt-5">
+    <%= link_to 'Ver más', articles_path, class: 'btn btn-services'  %>
+  </div>
 </section>
 <section id="social">
   <h2 class="title">Encontranos en nuestras redes</h2>
@@ -32,10 +35,10 @@
   </div>
   <div class="social-footer">
     <div>
-      <%= link_to '#' do  %>
+      <%= link_to 'https://www.instagram.com/iconoinstituto/', target: '_blank' do  %>
       <i class="fab fa-instagram"></i>
       <% end %>
-      <%= link_to '#' do  %>
+      <%= link_to 'https://www.facebook.com/Institutodecirugiayobesidaddelnorte', target: '_blank' do  %>
       <i class="fab fa-facebook-square"></i>
       <% end %>
       <%= link_to '#' do  %>

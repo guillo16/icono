@@ -16,6 +16,7 @@
     color: $green;
     font-size: 16px;
     margin-bottom: 32px;
+    font-weight: bold;
   }
   p {
     margin-bottom: 4px;
@@ -62,6 +63,27 @@
   }
 }
 
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-postion: center;
+  background-size: cover;
+}
+.login-container {
+  width: 500px;
+  padding: 30px;
+  background-color: rgba(250, 250, 250, 0.9);
+  border-radius: 8px;
+  h2 {
+    text-align: center;
+    color: $green;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
 @media(max-width: 787px) {
   .form-wrapper {
    grid-template-columns:1fr;
@@ -80,6 +102,12 @@
     padding: 20px;
     border-radius: 8px;
     background-color: white;
+
+  }
+
+  .login-container {
+    width: 300px;
+    padding: 30px;
 
   }
 }
