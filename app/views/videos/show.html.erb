@@ -1,12 +1,19 @@
-<div class="video-container">
-  <div class="video-wrapper">
-    <div class="video-player">
-      <iframe width= "840" height= "540" src="https://www.youtube.com/embed/<%= @video.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <h5><%= @video.title %></h5>
-      <h5><%= @video.category %></h5>
-    </div>
-  </div>
-  <div class="video-button">
-    <%= link_to 'Back to Videos' ,videos_path, class: 'btn btn-primary' %>
-  </div>
+<%= render 'shared/navbar' %>
+<div class="video-player">
+  <iframe src="https://www.youtube.com/embed/<%= @video.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="d-flex justify-content-between video-footer">
+    <div>
+     <p><%= @video.title %></p>
+     <p style="font-size: 16px; color: grey; font-weight: lighter;">12/02/202</p>
+   </div>
+   <h3><%= @video.category %></h3>
+ </div>
+ <div class="text-center p-5">
+  <%= link_to 'Volver' ,videos_path, class: 'btn btn-services btn-block btn-lg '  %>
+ </div>
+
 </div>
+
+
+
+
