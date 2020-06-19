@@ -1,8 +1,11 @@
 <div class="booking-container">
-  <div>
+  <div class="d-none d-md-block">
     <video autoplay muted loop id="myVideo">
       <source src="https://res.cloudinary.com/dokddymx6/video/upload/v1591895408/Office-7269_cwmnyy.mp4" type="video/mp4">
     </video>
+  </div>
+  <div class="d-md-none">
+    <img src="https://res.cloudinary.com/dokddymx6/image/upload/c_scale,w_761/v1592312831/curso_secretaria_ejecutiva_z7vjco.webp" alt="secretary-img">
   </div>
   <div>
     <%= link_to 'Turno Online', turnos_path, class: 'btn btn-lg btn-block btn-services'  %><br>
