@@ -10,7 +10,7 @@
   <div class="article-show-content">
     <h2><%= @article.title %></h2>
     <h3><%= @article.subtitle %></h3>
-    <img src="<%= @article.photo %>" alt="">
+    <%= cl_image_tag @article.photo.key %>
     <p><%= @article.content %></p>
   </div>
   <%= link_to 'Volver', :back, class: 'btn btn-services btn-block btn-lg'  %>
