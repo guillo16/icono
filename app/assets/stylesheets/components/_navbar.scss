@@ -41,7 +41,7 @@
 
 .nav-link {
   color: #373737 !important;
-  font-size: 17px;
+  font-size: 14px;
   margin-right: 8px;
   &:hover {
     color: grey !important;
@@ -70,4 +70,15 @@
   color: white;
   width: 30px;
   height: 30px;
+}
+
+@media(max-width: 575px) {
+  .nav-link {
+  color: #373737 !important;
+  font-size: 16px;
+  margin-right: 8px;
+  &:hover {
+    color: grey !important;
+  }
+}
 }
