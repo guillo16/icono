@@ -9,7 +9,9 @@
   <div class="article-show-content">
     <h2><%= @program.title %></h2>
     <h3><%= @program.subtitle %></h3>
-    <%= cl_image_tag @program.photo.key %>
+    <% @program.photos.each do |photo| %>
+    <%= cl_image_tag photo.key %>
+    <% end %>
     <p><%= @program.content %></p>
   </div>
   <%= link_to 'Volver', :back, class: 'btn btn-services btn-block btn-lg'  %>

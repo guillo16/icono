@@ -1,5 +1,6 @@
 class Article < ApplicationRecord
   paginates_per 6
+
   validates :title, presence: true
   validates :subtitle, presence: true
   has_one_attached :photo

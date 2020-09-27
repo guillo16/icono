@@ -1,5 +1,5 @@
 class ProgramsController < ApplicationController
-  before_action :authenticate_user!, only: %i[index show]
+  skip_before_action :authenticate_user!, only: %i[index show]
   before_action :set_programs, only: %i[show edit update destroy]
 
   def index
@@ -42,6 +42,6 @@ class ProgramsController < ApplicationController
   end
 
   def program_params
-    params.require(:program).permit(:title, :subtitle, :content, :photo)
+    params.require(:program).permit(:title, :subtitle, :content, photos: [])
   end
 end

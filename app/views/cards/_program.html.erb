@@ -1,0 +1,13 @@
+<div class="article-cards">
+  <%= link_to program_path(program) do %>
+  <% program.photos.first(1).each do |photo| %>
+  <%= cl_image_tag photo.key %>
+  <% end %>
+  <div class="article-content">
+    <div>
+      <h2><%= program.title %></h2>
+      <p><%= program.subtitle.truncate(80) %></p>
+    </div>
+  </div>
+  <% end %>
+</div>

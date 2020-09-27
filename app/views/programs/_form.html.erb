@@ -6,7 +6,7 @@
 <p>Contenido</p>
 <%= f.input :content, label: false %>
 <p>Foto</p>
-<%= f.input :photo, as: :file %>
+<%= f.input :photos, as: :file, input_html: { multiple: true } %>
 <br>
 <%= f.submit 'Crear Dieta', class: 'btn btn-block btn-services' %>
 <% end %>
