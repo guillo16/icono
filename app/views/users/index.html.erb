@@ -1,20 +1,22 @@
 <%= render 'shared/navbar' %>
-<div class="container">
-  <h2 class="text-center py-5">Bienvenido a Icono Administrador</h2>
-  <h3>Novedades</h3>
-  <p><%= link_to 'Ver novedades', articles_path, class: "btn btn-services" %></p>
-  <p><%= link_to 'Crear novedades', new_article_path, class: "btn btn-primary " %></p>
-  <h3>Videos</h3>
-  <p><%= link_to 'Ver videos', videos_path, class: "btn btn-services" %></p>
-  <p><%= link_to 'Crear videos', new_video_path, class: "btn btn-primary " %></p>
-  <h3>Icono en Red</h3>
-  <p><%= link_to 'Ver videos', videos_path, class: "btn btn-services" %></p>
-  <p><%= link_to 'Crear videos', new_video_path, class: "btn btn-primary " %></p>
-  <h3>Testimonios</h3>
-  <p><%= link_to 'Ver videos', videos_path, class: "btn btn-services" %></p>
-  <p><%= link_to 'Crear videos', new_video_path, class: "btn btn-primary " %></p>
-  <h3> Dietas</h3>
-  <p><%= link_to 'Ver videos', videos_path, class: "btn btn-services" %></p>
-  <p><%= link_to 'Crear videos', new_video_path, class: "btn btn-primary " %></p>
+<div class="d-flex justify-content-center align-items-center py-3 px-3 px-md-5">
+  <div class="shadow px-3 px-md-5 mb-5 bg-white rounded" id="user-show">
+    <h2 class="py-5 text-center">Bienvenido a Icono Administrador</h2>
+    <h3>Novedades</h3>
+    <p><%= link_to 'Ver novedades', articles_path, class: "btn btn-services btn-block btn-lg"  %></p>
+    <p><%= link_to 'Crear novedades', new_article_path, class: "btn btn-primary btn-block btn-lg"  %></p>
+    <h3>Videos</h3>
+    <p><%= link_to 'Ver videos', videos_path, class: "btn btn-services btn-block btn-lg"  %></p>
+    <p><%= link_to 'Crear videos', new_video_path, class: "btn btn-primary btn-block btn-lg  " %></p>
+    <h3>Icono en Red</h3>
+    <p><%= link_to 'Ver videos', videos_path, class: "btn btn-services btn-block btn-lg"  %></p>
+    <p><%= link_to 'Crear videos', new_video_path, class: "btn btn-primary btn-block btn-lg  " %></p>
+    <h3>Testimonios</h3>
+    <p><%= link_to 'Ver testimonios', posts_path, class: "btn btn-services btn-block btn-lg"  %></p>
+    <p><%= link_to 'Crear testimonios', new_post_path, class: "btn btn-primary btn-block btn-lg  " %></p>
+    <h3> Dietas</h3>
+    <p><%= link_to 'Ver dietas', programs_path, class: "btn btn-services btn-block btn-lg"  %></p>
+    <p><%= link_to 'Crear dietas', new_program_path, class: "btn btn-primary btn-block btn-lg  " %></p>
+  </div>
 </div>
 

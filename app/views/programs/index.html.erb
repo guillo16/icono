@@ -1,0 +1,15 @@
+<%= render 'shared/navbar' %>
+<% if user_signed_in? %>
+<div class="article-show-navbar">
+  <%= link_to 'Crear Dieta', new_program_path, class: 'btn btn-primary btn-block btn-lg'  %>
+</div>
+<% else %>
+<% end %>
+<h2 class="article-title text-center">Novedades</h2>
+<div class="articles-index-container">
+  <% @programs.each do |program| %>
+  <%= render 'cards/program', program: program %>
+  <% end %>
+</div>
+<%= paginate @programs %>
+<br><br>
