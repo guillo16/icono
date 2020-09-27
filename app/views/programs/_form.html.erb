@@ -5,8 +5,8 @@
 <%= f.input :subtitle, label: false %>
 <p>Contenido</p>
 <%= f.input :content, label: false %>
-<p>Foto</p>
-<%= f.input :photos, as: :file, input_html: { multiple: true } %>
+<p>Fotos (cargar todas juntas sino agregar en "editar")</p>
+<%= f.input :photos, as: :file, input_html: { multiple: true }, label: false %>
 <br>
 <%= f.submit 'Crear Dieta', class: 'btn btn-block btn-services' %>
 <% end %>

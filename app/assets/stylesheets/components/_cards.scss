@@ -37,6 +37,11 @@
 }
 
 //homepage cards testimonios
+#diets {
+  a {
+    text-decoration: none;
+  }
+}
 .card-diet {
   background-size: cover;
   background-position: center;
@@ -52,4 +57,8 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-bottom: 16px;
+  &:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    color: grey;
+  }
 }
