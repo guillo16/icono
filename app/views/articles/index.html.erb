@@ -8,7 +8,7 @@
 <h2 class="article-title text-center">Novedades</h2>
 <div class="articles-index-container">
   <% @articles.each do |article| %>
-  <%= render 'shared/cards', article: article %>
+  <%= render 'cards/article', article: article %>
   <% end %>
 </div>
 <%= paginate @articles %>

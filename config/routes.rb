@@ -1,13 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'posts/index'
-  get 'posts/show'
-  get 'posts/new'
-  get 'posts/create'
-  get 'posts/edit'
-  get 'posts/update'
-  get 'posts/destroy'
-  get 'users/show'
   devise_for :users
   root to: 'pages#home'
 
@@ -22,5 +14,6 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   resources :videos
   resources :users, only: :index
+  resources :posts
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

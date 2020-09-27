@@ -8,8 +8,8 @@ class Article < ApplicationRecord
   private
 
   def photo_attach
-    if photo.attached? == false
-      errors.add(:photo, 'Tienes que elegir una foto')
-    end
+    return unless photo.attached? == false
+
+    errors.add(:photo, 'Tienes que elegir una foto')
   end
 end
