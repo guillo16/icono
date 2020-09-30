@@ -1,0 +1,12 @@
+<div class="article-cards">
+  <%= link_to post_path(post) do %>
+  <%= cl_image_tag post.photo.key %>
+
+  <div class="article-content">
+    <div>
+      <h2><%= post.title %></h2>
+      <p><%= post.subtitle.truncate(80) %></p>
+    </div>
+  </div>
+  <% end %>
+</div>

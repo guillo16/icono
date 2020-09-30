@@ -13,5 +13,9 @@ Rails.application.routes.draw do
   resources :articles
   resources :contacts, only: [:new, :create]
   resources :videos
+  resources :users, only: :index
+  resources :posts
+  resources :programs
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

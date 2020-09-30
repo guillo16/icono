@@ -1,0 +1,14 @@
+<% if user_signed_in? %>
+<div class="article-show-navbar">
+  <%= link_to 'Crear Testimonio', new_post_path, class: 'btn btn-primary btn-block btn-lg'  %>
+</div>
+<% else %>
+<% end %>
+<h2 class="article-title text-center">Testimonios</h2>
+<div class="articles-index-container">
+  <% @posts.each do |post| %>
+  <%= render 'cards/post', post: post %>
+  <% end %>
+</div>
+<%= paginate @posts %>
+<br><br>

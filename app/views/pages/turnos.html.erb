@@ -1,4 +1,3 @@
-<%= render 'shared/navbar' %>
 <div class="turnos-banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://res.cloudinary.com/dokddymx6/image/upload/c_scale,w_1491/v1592576863/Captura_de_Pantalla_2020-06-11_a_la_s_15.34.29_iau8hb_i80l1w.jpg);">
 </div>
 <h2 class="title">Solicitar turno</h2>
@@ -7,7 +6,10 @@
     <img src="https://res.cloudinary.com/dokddymx6/image/upload/c_scale,w_974/v1592312831/curso_secretaria_ejecutiva_z7vjco.jpg" alt="">
   </div>
   <div>
-    <%= link_to 'Turno Online', '#', class: 'btn btn-lg btn-block btn-services'  %><br>
+    <%= link_to 'Turno Online', 'https://www.qsisweb.com/index.php/q-34s08234626o77610-81128-327e81726731f1563-7017m198a96587l963.html', class: 'btn btn-lg btn-block btn-services', target: "_blank"  %><br>
+     <%= link_to  'https://www.qsisweb.com/index.php/q-34s08234626o77610-81128-327e81726731f1563-7017m198a96587l963.html', class: 'btn btn-lg btn-block btn-services', target: "_blank" do %>
+     <i class="fab fa-whatsapp-square"></i> WhatsApp
+     <% end %><br>
     <button type="button" class="btn btn-lg btn-block btn-services" data-toggle="modal" data-target="#exampleModalCenter">
       Llamar
     </button><br>
@@ -59,3 +61,6 @@
     </div>
   </div>
 </div>
+
+
+

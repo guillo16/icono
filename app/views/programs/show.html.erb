@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+<div class="article-show-navbar">
+  <%= link_to 'Editar Dieta', edit_program_path(@program), class: 'btn btn-warning btn-block btn-lg'  %>
+  <%= link_to 'Destruir Dieta', @program, method: :delete, data: { confirm: 'Estas seguro de eliminar la Dieta' } , class: 'btn btn-danger btn-block btn-lg' %>
+</div>
+<% else %>
+<% end %>
+<div class="article-show-container">
+  <div class="article-show-content">
+    <h2><%= @program.title %></h2>
+    <h3><%= @program.subtitle %></h3>
+    <%= render 'carousel' %>
+    <p><%= @program.content %></p>
+  </div>
+  <%= link_to 'Volver', :back, class: 'btn btn-services btn-block btn-lg'  %>
+</div>

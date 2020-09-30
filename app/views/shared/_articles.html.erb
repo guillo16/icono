@@ -1,6 +1,6 @@
 <div class="articles-container">
   <% @articles.last(3).reverse_each do |article| %>
-  <%= render 'shared/cards', article: article %>
+  <%= render 'cards/article', article: article %>
   <% end %>
 </div>
 

@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+<div class="article-show-navbar">
+  <%= link_to 'Editar Testimonio', edit_post_path(@post), class: 'btn btn-warning btn-block btn-lg'  %>
+  <%= link_to 'Destruir Testimonio', @post, method: :delete, data: { confirm: 'Estas seguro de eliminar la Testimonio' } , class: 'btn btn-danger btn-block btn-lg' %>
+</div>
+<% else %>
+<% end %>
+<div class="article-show-container">
+  <div class="article-show-content">
+    <h2><%= @post.title %></h2>
+    <h3><%= @post.subtitle %></h3>
+    <%= cl_image_tag @post.photo.key %>
+    <p><%= @post.content %></p>
+  </div>
+  <%= link_to 'Volver', :back, class: 'btn btn-services btn-block btn-lg'  %>
+</div>

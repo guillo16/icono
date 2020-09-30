@@ -1,4 +1,3 @@
-<%= render 'shared/navbar' %>
 <% if user_signed_in? %>
 <div class="article-show-navbar">
   <%= link_to 'Crear Noticia', new_article_path, class: 'btn btn-primary btn-block btn-lg'  %>
@@ -8,8 +7,16 @@
 <h2 class="article-title text-center">Novedades</h2>
 <div class="articles-index-container">
   <% @articles.each do |article| %>
-  <%= render 'shared/cards', article: article %>
+  <%= render 'cards/article', article: article %>
   <% end %>
 </div>
 <%= paginate @articles %>
 <br><br>
+<h2 class="article-title text-center pb-5">Saco Noticias</h2>
+<div class="container pb-5">
+  <div class="card-diet" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(http://iconoinstituto.com/es/wp-content/uploads/2020/03/SACO-2020.png)">
+    Ir a Saco
+  </div>
+</div>
+
+

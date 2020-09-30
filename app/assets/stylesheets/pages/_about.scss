@@ -91,6 +91,38 @@
   }
 }
 
+.modal-body {
+  h3 {
+    font-size: 22px;
+    color: $green;
+    font-weight: bold;
+  }
+}
+
+.modal-content {
+  h3 {
+    font-size: 22px;
+    color: $green;
+    font-weight: bold;
+  }
+}
+
+#terapia {
+
+  h2 {
+    font-size: 30px;
+    color: $green;
+    font-weight: bold;
+    padding: 30px 0px;
+  }
+  h3 {
+    font-size: 22px;
+    color: $green;
+    font-weight: bold;
+    margin-top: 24px;
+  }
+}
+
 
 
 @media(max-width: 575px) {
