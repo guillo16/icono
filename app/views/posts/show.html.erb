@@ -9,8 +9,10 @@
   <div class="article-show-content">
     <h2><%= @post.title %></h2>
     <h3><%= @post.subtitle %></h3>
-    <%= cl_image_tag @post.photo.key %>
+    <%= render 'carousel' %>
     <p><%= @post.content %></p>
   </div>
-  <%= link_to 'Volver', :back, class: 'btn btn-services btn-block btn-lg'  %>
+  <div class="p-5">
+    <%= link_to 'Volver', :back, class: 'btn btn-services btn-block btn-lg'  %>
+  </div>
 </div>

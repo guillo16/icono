@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :about, :team, :nutrition, :doctor, :surgery, :turnos]
+  skip_before_action :authenticate_user!, only: [:home, :about, :team, :nutrition, :doctor, :surgery, :turnos, :red, :saco]
 
   def home
     @articles = Article.all
@@ -21,5 +21,11 @@ class PagesController < ApplicationController
   end
 
   def turnos
+  end
+
+  def red
+  end
+
+  def saco
   end
 end

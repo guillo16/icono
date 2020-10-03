@@ -6,7 +6,7 @@
     <p>Subtitulo</p>
     <%= f.input :subtitle, label: false %>
     <p>Contenido</p>
-    <%= f.input :content, label: false %>
+    <%= f.input :content, label: false, input_html: { rows: 8 } %>
     <p>Foto</p>
       <%= f.input :photo, as: :file %>
     <br>

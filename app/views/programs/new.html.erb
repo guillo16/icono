@@ -1,5 +1,12 @@
-<div class="form-container">
-  <div class="forms">
-    <%= render "form" %>
+<div class="container">
+  <h2 class="new-title">Crear programa de alimentacion saludable </h2>
+  <div class="form-container">
+    <div class="forms">
+      <%= render 'form' %>
+    </div>
+  </div>
+  <div class="py-5">
+    <%= link_to 'Volver', :back, class: ' btn btn-danger btn-block'  %>
+    <%= link_to 'Ir al menu', :back, class: ' btn btn-primary btn-block'  %>
   </div>
 </div>
