@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light navbar-lewagon">
+<nav class="navbar navbar-expand-xl navbar-light navbar-lewagon">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="guillo" onclick="onClick()">
     <span class="menu">
       <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,7 +19,7 @@
     <img src="https://res.cloudinary.com/dokddymx6/image/upload/v1591899146/logo-corregido-ICONO-300x90_dhiakb.png" alt="" style="width: 130px; height: 45px;">
     <% end %>
   </div>
-  <div class="d-lg-none">
+  <div class="d-xl-none">
     <%= link_to turnos_path do  %>
     <i class="far fa-calendar-alt"></i>
     <% end %>
@@ -46,20 +46,25 @@
         <%= link_to 'Icono en red', red_icono_path, class: "nav-link"%>
       </li>
       <li class="nav-item">
-        <%= link_to 'Videos', videos_path, class: "nav-link"%>
+        <%= link_to 'Acreditación SACO', saco_path, class: "nav-link"%>
       </li>
       <li class="nav-item">
         <%= link_to 'Contacto', new_contact_path, class: "nav-link"%>
       </li>
+      <li class="nav-item d-xl-none">
+        <%= link_to 'Videos', videos_path, class: "nav-link"%>
+      </li>
     </ul>
   </div>
-  <div class="d-none d-lg-block">
+  <div class="d-none d-xl-block">
+    <%= link_to videos_path do  %>
+    <i class="fas fa-play-circle"></i>
+    <% end %>
     <%= link_to turnos_path do  %>
     <i class="far fa-calendar-alt"></i>
     <% end %>
   </div>
 </nav>
-
 <script>
   const onClick = () => {
     const crossButton = document.querySelector('.cross');
