@@ -10,6 +10,6 @@ class Post < ApplicationRecord
   def photo_attach
     return unless photos.attached? == false
 
-    errors.add(:photos, 'Tienes que elegir una foto')
+    errors.add(:photos, 'no puede estar vacio')
   end
 end

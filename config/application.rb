@@ -14,6 +14,7 @@ module Icono
       generate.test_framework :test_unit, fixture: false
     end
     # Initialize configuration defaults for originally generated Rails version.
+    config.i18n.default_locale = :es
     config.load_defaults 5.2
 
     # Settings in config/environments/* take precedence over those specified here.

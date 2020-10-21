@@ -12,7 +12,7 @@ class ContactsController < ApplicationController
       flash.now[:error] = nil
       redirect_to root_path, notice: 'Gracias por su mensaje nos comunicaremos pronto!!'
     else
-      flash.now[:error] = 'Cannot send message'
+      flash[:error] = 'Cannot send message'
       render :new
     end
   end

@@ -1,0 +1,36 @@
+es:
+  mail_form:
+    model:
+      contact:
+        name: "Contacto"
+    attributes:
+      contact:
+        name: "Nombre"
+        phone: "Teléfono"
+        message: "Mensaje"
+  helpers:
+    submit:
+      create: "Crear noticia"
+      update: "Actualizar noticia"
+  devise:
+    sessions:
+      user:
+        signed_in: "Logueado exitosamente"
+        signed_out: "Sesión Finalizada"
+  activerecord:
+    attributes:
+      post:
+        title: "Titulo"
+        subtitle: "Subtitulo"
+        content: "Contenido"
+        photo: "Foto"
+      article:
+        title: "Titulo"
+        subtitle: "Subtitulo"
+        content: "Contenido"
+        photo: "Foto"
+      program:
+        title: "Titulo"
+        subtitle: "Subtitulo"
+        content: "Contenido"
+        photos: "Fotos"
