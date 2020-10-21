@@ -4,10 +4,10 @@
 <p>Subtitulo</p>
 <%= f.input :subtitle, label: false %>
 <p>Contenido</p>
-<%= f.input :content, label: false %>
+<%= f.input :content, label: false, input_html: { rows: 8 } %>
 <p>Foto</p>
-<%= f.input :photo, as: :file %>
+<%= f.input :photos, as: :file, input_html: { multiple: true }, label: false %>
 <br>
-<%= f.submit 'Crear Testimonio', class: 'btn btn-block btn-services' %>
+<%= f.submit 'Enviar', class: 'btn btn-block btn-services' %>
 <% end %>
 

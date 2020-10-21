@@ -3,149 +3,30 @@
     <button type="button" class="btn-about" data-toggle="modal" data-target="#exampleModalCenter">
       ¿EN QUÉ CONSISTE LA PRIMERA CONSULTA CON EL CIRUJANO?
     </button>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">Clínica Médica.</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>La evaluación médica debe incluir signos vitales, así como el IMC (Índice de Masa Corporal).Para ello se realizará una entrevista inicial donde debe registrar lo siguiente:<br>
-              <ul>
-                <li>
-                  <strong>Historia clínica completa sobre su obesidad:</strong>  incluyendo datos como la edad en que el paciente comenzó a tener sobrepeso, intentos de pérdida de peso, el peso más alto alcanzado y el más bajo en la edad adulta.
-                </li>
-                <li>
-                  <strong>Existencia de comorbilidades</strong>,como apnea obstructiva del sueño, diabetes mellitus, hipertensión, dislipidemia, coronariopatías, y estrés articular.
-                </li>
-                <li>
-                  <strong>Factores de riesgo adicionales:</strong>incluyendo historia familiar e historia social de tabaquismo, alcoholismo o consumo de drogas.
-                </li>
-                <li>
-                  <strong>Medicación actual </strong>que pueda afectar el manejo quirúrgico.
-                </li>
-                <li>
-                  <strong>¿Cuál es su nivel de ejercicio físico?</strong>
-                </li>
-                <li>
-                  <strong>Expectativas del paciente.</strong>
-                </li>
-                <li>
-                  <strong>Solicitud </strong>de electrocardiograma + ficha médica correspondiente.
-                </li>
-              </ul>
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-services" data-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <%= render 'modals/modal_1' %>
   </div>
   <div>
-    <button type="button" class="btn-about" data-toggle="modal" data-target="#exampleModalScrollable">
+    <button type="button" class="btn-about" data-toggle="modal" data-target="#second-modal">
       ¿CUÁL ES LA CIRUGÍA ADECUADA PARA MI?
     </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalScrollableTitle">Es importante que:</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-           <p>
-             El paciente conozca que él no escoge el tipo de cirugía, es el médico cirujano quien determina la mejor opción.<br><br>
-             <strong>Circuito del paciente en ÍCONO</strong><br><br>El paciente ingresa al centro y realiza su primera consulta generalmente con el  Médico Cirujano quien será el encargado de derivar a  todas las especialidades relacionadas al tratamiento del problema de salud y peso con el que se encuentre. <br>Se realizará la solicitud de  estudios pre quirúrgicos<br>
-             <ul>
-              <li>Video endoscopia Digestiva Alta</li>
-              <li>Ecografía Abdominal</li>
-              <li>Eco cardiograma Doppler</li>
-              <li>Espirometría de tórax</li>
-              <li>Laboratorio completo</li>
-              <li>Polisomnografía</li>
-            </ul>
-            <br>Luego de asistir a cada especialidad, iniciando los tratamientos y estudios correspondientes por área, se evaluará la factibilidad y necesidad de realizarse o no <strong>Cirugía Bariátrica</strong>, lo cual determinara el tiempo y cantidad de consultas consecutivas.<br><br><strong>Consultas interdiciplinarias</strong><br><br>En caso de indicarse cirugía bariátrica, el  objetivo de toda la preparación  es minimizar el riesgo de complicaciones y acondicionar al paciente tanto física como psicológicamente  para una cirugía más segura y una pronta recuperación luego de la intervención.
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-services" data-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
+    <%= render 'modals/modal_2' %>
   </div>
   <div>
     <button type="button" class="btn-about" data-toggle="modal" data-target="#exampleModal">
       ¿CUÁL ES EL LÍMITE DE EDAD PARA LAS CIRUGÍAS BARIÁTRICAS?
     </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Límite de Edad</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>Normalmente consideramos aptos para operar aquellas personas entre los 18 y 65 años, el equipo valorará cada caso individualmente. Hemos operado pacientes de más de 60 años cuyas condiciones permiten escoger la opción de cirugía bariátrica.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-services" data-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <%= render 'modals/modal_3' %>
   </div>
   <div>
     <button type="button" class="btn-about" data-toggle="modal" data-target="#exampleModalLong">
       ¿QUÉ PASA CON "LAS PIELES SOBRANTES" DESPUÉS DE LA PÉRDIDA DE PESO?
     </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Pieles sobrantes</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              Dependiendo de la características de las piel del paciente, y el grado de deformación previa. En ICONO Instituto, contamos con especialistas en cirugía plástica. <br>Las operaciones más frecuentes son la Dermolipectomía Circunferencial, la Abdominoplastia y la Mastopexia de reducción con prótesis, seguida a distancia de la Cruroplastia y la Braquioplastia. <br><strong>Dermolipectomía Circunferencial</strong><br>Elimina el exceso circunferencial de grasa y piel. Se realiza en el área del abdomen, laterales y parte inferior de la espalda. Es indicada para pacientes con pérdidas importantes de peso, obesidad o embarazos múltiples. <br>El momento más adecuado para la operación, es cuando el paciente ya ha perdido todo el peso posible, se ha recuperado bien con ejercicio físico, y tiene un estado nutricional correcto, controlado por los profesionales de acondicionamiento físico y nutrición.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-services" data-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <%= render 'modals/modal_4' %>
   </div>
   <div>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn-about" data-toggle="modal" data-target="#modal-1">
-      Terapia del lenguaje
+    <button type="button" class="btn-about" data-toggle="modal" data-target="#staticBackdrop">
+      Terapia del lenguage
     </button>
-    <!-- Modal -->
-    <%= render 'modals/modal_1' %>
+    <%= render 'modals/modal_5' %>
   </div>
-  <button type="button" class="btn-about" data-toggle="modal" data-target=".bd-example-modal-xl">Terapia del lenguage XL</button>
-  <%= render 'modals/modal_2' %>
-
-
-
 </div>

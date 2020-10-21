@@ -1,7 +1,7 @@
 .main-banner {
   background-size: cover;
   background-position: 80% 10%;
-  height: calc(100vh - 135px);
+  height: calc(100vh - 130px);
   display: flex;
   align-items: center;
 }
@@ -35,6 +35,27 @@
   height: 50vh;
 }
 
+.saco-banner {
+  margin: 32px auto;
+  width: 400px;
+  padding: 20px 40px;
+  background-color: $green;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+#horarios {
+  h2 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+}
 
 
 @media(max-width: 970px) {
@@ -52,6 +73,19 @@
 
   .social-banner {
     height: 90vh;
+  }
+
+  .saco-banner {
+    margin: 16px auto;
+    margin-top: 32px;
+    width: 345px;
+    padding: 20px 12px;
+    background-color: $green;
+    img {
+      width: 100%;
+      height: 36px;
+      object-fit: cover;
+    }
   }
 }
 

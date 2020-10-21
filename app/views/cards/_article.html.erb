@@ -1,12 +1,9 @@
-<div class="article-cards">
+<div class="card">
   <%= link_to article_path(article) do %>
-  <%= cl_image_tag article.photo.key %>
-
-  <div class="article-content">
-    <div>
-      <h2><%= article.title %></h2>
-      <p><%= article.subtitle.truncate(80) %></p>
-    </div>
+  <%= cl_image_tag article.photo.key, class:'card-img-top' %>
+  <div class="card-body">
+    <h5 class="card-title font-weight-bold"><%= article.title %></h5>
+    <p class="card-text"><small><%= article.subtitle.truncate(80) %></small></p>
   </div>
   <% end %>
 </div>

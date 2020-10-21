@@ -1,7 +1,8 @@
 <div class="article-cards">
   <%= link_to post_path(post) do %>
-  <%= cl_image_tag post.photo.key %>
-
+  <% post.photos.first(1).each do |photo| %>
+  <%= cl_image_tag photo.key %>
+  <% end %>
   <div class="article-content">
     <div>
       <h2><%= post.title %></h2>

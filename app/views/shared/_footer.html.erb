@@ -2,7 +2,8 @@
   <img src="https://res.cloudinary.com/dokddymx6/image/upload/v1591896454/ICONO-fondo-blancoRecurso-8_xiwioe.png" alt="">
   <div>
     <% if user_signed_in? %>
-    <h2><%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete%></h2>
+    <%= link_to 'Ir al menu', users_path, class: "btn btn-primary btn-sm" %>
+    <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: "btn btn-danger btn-sm" %>
     <% else %>
     <h2>25 de Mayo 710 | 4920436 | 4303750 | <%= link_to 'Iniciar sesión', new_user_session_path, style: 'color: white;'  %></h2>
     <% end %>

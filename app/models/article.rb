@@ -11,6 +11,6 @@ class Article < ApplicationRecord
   def photo_attach
     return unless photo.attached? == false
 
-    errors.add(:photo, 'Tienes que elegir una foto')
+    errors.add(:photo, 'no puede estar vacio')
   end
 end

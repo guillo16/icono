@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'nutrition', to: 'pages#nutrition'
   get 'doctor', to: 'pages#doctor'
   get 'turnos', to: 'pages#turnos'
+  get 'red-icono', to: 'pages#red'
+  get 'saco', to: 'pages#saco'
   resources :articles
   resources :contacts, only: [:new, :create]
   resources :videos
