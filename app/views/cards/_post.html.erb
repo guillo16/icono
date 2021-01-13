@@ -1,13 +1,11 @@
-<div class="article-cards">
+<div class="card">
   <%= link_to post_path(post) do %>
   <% post.photos.first(1).each do |photo| %>
-  <%= cl_image_tag photo.key %>
+  <%= cl_image_tag photo.key, class:'card-img-top' %>
   <% end %>
-  <div class="article-content">
-    <div>
-      <h2><%= post.title %></h2>
-      <p><%= post.subtitle.truncate(80) %></p>
-    </div>
+  <div class="card-body">
+    <h5 class="card-title font-weight-bold"><%= post.title %></h5>
+    <p class="card-text"><small><%= post.subtitle.truncate(80) %></small></p>
   </div>
   <% end %>
 </div>
