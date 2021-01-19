@@ -57,13 +57,13 @@
         </div>
       </li>
       <li class="nav-item">
-        <%= link_to 'Novedades', articles_path, class: "nav-link d-lg-none"%>
+        <%= link_to 'Novedades', articles_path, class: "nav-link d-xl-none"%>
       </li>
       <li class="nav-item">
-        <%= link_to 'Alimentación saludable', programs_path, class: "nav-link d-lg-none"%>
+        <%= link_to 'Alimentación saludable', programs_path, class: "nav-link d-xl-none"%>
       </li>
       <li class="nav-item">
-        <%= link_to 'Testimonios', posts_path, class: "nav-link d-lg-none"%>
+        <%= link_to 'Testimonios', posts_path, class: "nav-link d-xl-none"%>
       </li>
       <li class="nav-item">
         <%= link_to 'Icono en red', red_icono_path, class: "nav-link"%>
@@ -74,10 +74,10 @@
       <li class="nav-item">
         <%= link_to 'Contacto', new_contact_path, class: "nav-link"%>
       </li>
-      <li class="nav-item">
-        <%= link_to 'Turnos', new_contact_path, class: "nav-link"%>
+      <li class="nav-item d-none d-xl-block">
+        <%= link_to 'Turnos', turnos_path, class: "nav-link"%>
       </li>
-      <li class="nav-item d-xl-none">
+      <li class="nav-item d-none">
         <%= link_to 'Videos', videos_path, class: "nav-link"%>
       </li>
     </ul>
