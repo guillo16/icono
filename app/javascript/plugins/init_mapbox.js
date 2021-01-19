@@ -9,15 +9,13 @@ const initMapbox = () => {
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v10',
-      center: [-65.202510, -26.8213],
+      center: [-65.2009048461914, -26.824682235717773],
       zoom: 13
 
     });
 
-
-
     new mapboxgl.Marker()
-    .setLngLat([ -65.202510, -26.821350 ])
+    .setLngLat([ -65.2009048461914, -26.824682235717773 ])
     .addTo(map);
 
     map.addControl(new mapboxgl.NavigationControl());
