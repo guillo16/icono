@@ -1,4 +1,4 @@
-<div class="articles-container">
+<div class="container articles-container">
   <% @articles.last(3).reverse_each do |article| %>
   <%= render 'cards/article', article: article %>
   <% end %>
