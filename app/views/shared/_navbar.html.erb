@@ -36,7 +36,6 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <%= link_to 'ICONO', about_path, class: "dropdown-item"%>
-          <%= link_to 'Equipo medico', team_path, class: "dropdown-item"%>
           <%= link_to 'Nuestros valores', about_path(anchor: 'valores'), class: "dropdown-item"%>
           <%= link_to 'Misión', about_path(anchor: 'mision'), class: "dropdown-item"%>
           <div class="dropdown-divider"></div>
@@ -78,7 +77,7 @@
         <%= link_to 'Testimonios', posts_path, class: "nav-link d-xl-none"%>
       </li>
       <li class="nav-item">
-        <%= link_to 'Icono en red', red_icono_path, class: "nav-link"%>
+        <%= link_to 'Icono en red', red_icono_path, class: "nav-link d-none"%>
       </li>
       <li class="nav-item">
         <%= link_to 'Acreditación SACO', saco_path, class: "nav-link"%>
