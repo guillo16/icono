@@ -105,6 +105,10 @@
 @media (max-width: 356px) {
   .social-card {
     padding: 10px;
-    height: 600px;
+    height: 514px;
+    p {
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
   }
 }

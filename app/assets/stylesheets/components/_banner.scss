@@ -95,4 +95,15 @@
   .social-banner {
     height: 100vh;
   }
+
+  .saco-banner {
+    margin: 32px auto;
+    width: 292px;
+    padding: 16px 10px;
+    background-color: $green;
+    img {
+      width: 100%;
+      object-fit: fill;
+    }
+  }
 }
