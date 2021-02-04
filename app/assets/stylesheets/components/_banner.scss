@@ -68,7 +68,7 @@
 
 @media (max-width: 576px) {
   .main-banner {
-    background-position: 60% 10%;
+    background-position: 85% 10%;
   }
 
   .social-banner {
@@ -87,6 +87,11 @@
       object-fit: cover;
     }
   }
+  .team-home-container {
+    img {
+     height: 340px !important;
+   }
+ }
 }
 
 
