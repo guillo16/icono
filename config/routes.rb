@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'networks/index'
+  get 'networks/show'
+  get 'networks/new'
+  get 'networks/edit'
   devise_for :users
   root to: 'pages#home'
 
