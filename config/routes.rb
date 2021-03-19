@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'networks/index'
-  get 'networks/show'
-  get 'networks/new'
-  get 'networks/edit'
   devise_for :users
   root to: 'pages#home'
 
@@ -22,6 +18,7 @@ Rails.application.routes.draw do
   resources :users, only: :index
   resources :posts
   resources :programs
+  resources :networks
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

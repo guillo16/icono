@@ -1,2 +1,19 @@
-<h1>Networks#show</h1>
-<p>Find me in app/views/networks/show.html.erb</p>
+<% if user_signed_in? %>
+<div class="article-show-navbar">
+  <%= link_to 'Editar Testimonio', edit_network_path(@network), class: 'btn btn-warning btn-block btn-lg'  %>
+  <%= link_to 'Destruir Testimonio', @network, method: :delete, data: { confirm: 'Estas seguro de eliminar la Testimonio' } , class: 'btn btn-danger btn-block btn-lg' %>
+</div>
+<% else %>
+<% end %>
+<div class="article-show-container">
+  <div class="article-show-content">
+    <h2><%= @network.title %></h2>
+    <%= render 'carousel' %>
+    <p><%= @network.content %></p>
+  </div>
+  <div class="p-5">
+    <%= link_to 'Volver', :back, class: 'btn btn-services btn-block btn-lg'  %>
+    <br>
+    <%= link_to 'Turnos', turnos_path, class: 'btn btn-services btn-block btn-lg' %>
+  </div>
+</div>

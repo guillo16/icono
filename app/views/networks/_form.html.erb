@@ -1,0 +1,8 @@
+<%= simple_form_for @network do |f| %>
+<%= f.input :title %>
+<%= f.input :content, input_html: { rows: 6 } %>
+<%= f.input :photos, as: :file, input_html: { multiple: true }, label: false %>
+<div class="py-3">
+  <%= f.submit "Enviar", class: "btn btn-dark btn-block" %>
+</div>
+<% end %>
