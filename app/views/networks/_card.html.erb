@@ -1,0 +1,10 @@
+<div class="card">
+  <%= link_to network_path(network) do %>
+  <% network.photos.first(1).each do |photo| %>
+  <%= cl_image_tag photo.key, class:'card-img-top' %>
+  <% end %>
+  <div class="card-body">
+    <h5 class="card-title font-weight-bold"><%= network.title %></h5>
+  </div>
+  <% end %>
+</div>

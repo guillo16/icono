@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="text-center py-3">
+    <h2 class="article-title mb-4" >Icono en red</h2>
+    <p style="line-height: 1.8;">Nuestro programa de formación y actualización para estudiantes, profesionales y equipos que anhelen capacitarse en el manejo interdisciplinario de Obesidad y Cirugía Metabólica incluye la formación teórica y actualizada como prácticas en consultas, cirugías en vivo y actualización de material teórico. <br>Las capacitaciones se realizan en San Miguel de Tucumán y en las provincias y centros que anhelen su preparación.<br>En la actualidad, tenemos realizadas capacitaciones a equipos y profesionales de Calafate, Santiago del Estero, Jujuy y La Rioja.<br>Nuestro trabajo de formación se complementa con una permanente comunicación e interacción con los equipos que se encuentran en distintos puntos de nuestro país, como así también el seguimiento y contención de todos los pacientes operados</p>
+  </div>
+  <div class="red-container py-5 mb-5">
+    <% @networks.each do |network| %>
+    <%= render 'card', network: network %>
+    <% end %>
+  </div>
+  <%= paginate @networks %>
+</div>
