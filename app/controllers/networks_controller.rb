@@ -43,6 +43,6 @@ class NetworksController < ApplicationController
   end
 
   def network_params
-    params.require(:network).permit(:title, :description, photos: [])
+    params.require(:network).permit(:title, :content, photos: [])
   end
 end
