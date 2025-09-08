@@ -8,6 +8,7 @@ class Article < ApplicationRecord
 
   private
 
+
   def photo_attach
     return unless photo.attached? == false
 
