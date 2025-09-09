@@ -9,11 +9,13 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
-      flash.now[:error] = nil
       redirect_to root_path, notice: 'Gracias por su mensaje nos comunicaremos pronto!!'
     else
-      flash[:error] = 'Cannot send message'
-      render :new
+      render turbo_stream: turbo_stream.replace(
+        "contact_form",
+        partial: "contacts/form_frame",
+        locals: { contact: @contact }
+      ), status: :unprocessable_entity
     end
   end
 end

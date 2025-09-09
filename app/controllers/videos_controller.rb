@@ -24,7 +24,7 @@ class VideosController < ApplicationController
     if @video.save
       redirect_to video_path(@video)
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -32,8 +32,11 @@ class VideosController < ApplicationController
   end
 
   def update
-    @video.update(video_params)
-    redirect_to video_path(@video)
+    if @video.update(video_params)
+      redirect_to video_path(@video)
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   def destroy

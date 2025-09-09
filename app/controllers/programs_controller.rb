@@ -18,7 +18,7 @@ class ProgramsController < ApplicationController
     if @program.save
       redirect_to program_path(@program)
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -26,8 +26,11 @@ class ProgramsController < ApplicationController
   end
 
   def update
-    @program.update(program_params)
-    redirect_to program_path(@program)
+    if @program.update(program_params)
+      redirect_to program_path(@program)
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   def destroy
