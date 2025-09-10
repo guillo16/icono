@@ -2,10 +2,10 @@
   <img src="https://res.cloudinary.com/dokddymx6/image/upload/v1591896454/ICONO-fondo-blancoRecurso-8_xiwioe.png" alt="">
   <div>
     <% if user_signed_in? %>
-    <%= link_to 'Ir al menu', users_path, class: "btn btn-primary btn-sm" %>
-    <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: "btn btn-danger btn-sm" %>
+      <%= link_to 'Ir al menu', users_path, class: "btn btn-primary btn-sm" %>
+      <%= link_to "Cerrar sesión", destroy_user_session_path, data: { turbo_method: :delete }, class: "btn btn-danger btn-sm" %>
     <% else %>
-    <h2>Santiago 351 | 0381-260-4510 | <%= link_to 'Iniciar sesión', new_user_session_path, style: 'color: white;'  %></h2>
+      <h2>Santiago 351 | 0381-260-4510 | <%= link_to 'Iniciar sesión', new_user_session_path, style: 'color: white;'  %></h2>
     <% end %>
     <p>Made by - <strong><%= link_to 'GV', 'http://www.gvweb.ar', target: '_blank'  %></strong> </p>
   </div>
